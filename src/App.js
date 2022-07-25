@@ -13,7 +13,6 @@ function App() {
       <DataTable />
       <Paginate />
       </div>
-      
     </div>
     </GlobalProvider>
   );

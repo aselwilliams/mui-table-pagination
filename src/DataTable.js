@@ -1,41 +1,3 @@
-// import {useContext} from 'react';
-// import { GlobalContext } from './context/GlobalContext';
-
-// const DataTable=()=>{
-// const { countries} =useContext(GlobalContext)
-//     const header=['ID','flag', 'country', 'capital', 'population', 'region']
-//     console.log(header)
-//     return (
-//         <div>
-//             <table style={{border:'solide 2px black',border: 'borderCollapse'}}>
-//                 <thead>
-//                     <tr>
-//                 {header.map((el,index)=>(
-//                      <th key={index}>{el}</th>
-//                 ))}    
-//                     </tr>
-//                 </thead>
-//                 <tbody>
-                    
-//                     {countries.map((item,index)=>(
-//                         <tr key={index}>
-//                         <td>{index+1}</td>
-//                         <td>{item.flag}</td>
-//                         <td>{item.name.common}</td>
-//                         <td>{item.capital}</td>
-//                         <td>{item.population}</td>
-//                         <td>{item.region}</td>
-//                         </tr>
-//                     ))}
-                    
-//                 </tbody>
-//             </table>
-//         </div>
-//     )
-// }
-
-// export default DataTable
-
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import Table from '@mui/material/Table';
@@ -110,3 +72,41 @@ countries.map((item)=>(
     </TableContainer>
   );
 }
+
+// import {useContext} from 'react';
+// import { GlobalContext } from './context/GlobalContext';
+
+// const DataTable=()=>{
+// const { countries} =useContext(GlobalContext)
+//     const header=['ID','flag', 'country', 'capital', 'population', 'region']
+//     console.log(header)
+//     return (
+//         <div>
+//             <table style={{border:'solide 2px black',border: 'borderCollapse'}}>
+//                 <thead>
+//                     <tr>
+//                 {header.map((el,index)=>(
+//                      <th key={index}>{el}</th>
+//                 ))}    
+//                     </tr>
+//                 </thead>
+//                 <tbody>
+                    
+//                     {countries.map((item,index)=>(
+//                         <tr key={index}>
+//                         <td>{index+1}</td>
+//                         <td>{item.flag}</td>
+//                         <td>{item.name.common}</td>
+//                         <td>{item.capital}</td>
+//                         <td>{item.population}</td>
+//                         <td>{item.region}</td>
+//                         </tr>
+//                     ))}
+                    
+//                 </tbody>
+//             </table>
+//         </div>
+//     )
+// }
+
+// export default DataTable
